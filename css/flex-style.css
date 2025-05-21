@@ -1,1 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+header {
+    display: flex;
+    height: 80px;
+    background-color: #8D0014;
+    padding: 10px 70px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header #logo {
+    font-family: "Oranienbaum", serif;
+    line-height: 25px;
+    color: white;
+    width: 149px;
+    text-align: center;
+}
+
+header #logo span {
+    font-size: 35px;
+}
+
+header #logo h4 {
+    font-size: 15px;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    font-family: "Oranienbaum", serif;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #8D0014;
+    padding: 10px 20px;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+#carrinho {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#carrinho:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+#carrinho img, #carrinho a {
+    width: 30px;
+    height: 30px;
+}
+
+main {
+    display: flex;
+    margin-top: 80px;
+}
+
+aside {
+    background-image: url(../assets/imgs/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 100vh;
+}
+
+#outroLado {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+}
+
+#conhecaMais {
+    font-family: "Playfair Display", serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#conhecaMais h2 {
+    font-size: 70px;
+}
+
+.vinhos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+    gap: 50px;
+}
+
+.vinhos .card {
+    width: 145px;
+    height: 200px;
+    background-color: rgb(255, 234, 76);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vinhos .card:hover {
+    background-color: #8D0014;
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(102, 0, 0, 0.5);   
+}
+
+.vinhos .card img {
+    height: 160px;
+}
+
+#clube {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-family: "Playfair Display", serif;
+    background-color: #ff7700;
+    padding: 30px;
+    width: 730px;
+    height: 140px;
+    color: white;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+#clube h2 {
+    font-size: 40px;
+    width: 200px;
+    line-height: 40px;
+}
+
+.saibaMais {
+    width: 250px;
+    text-align: center;
+}
+
+.saibaMais h4 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.saibaMais button {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    background-color: #8D0014;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.saibaMais button:active {
+    transform: scale(0.98);
+    transition: 0.3s;
+}
